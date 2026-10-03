@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GDG ProjectHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-dot blue"></span>
+            <span class="logo-dot red"></span>
+            <span class="logo-dot yellow"></span>
+            <span class="logo-dot green"></span>
+            <span>GDG ProjectHub</span>
+        </div>
+
+        <button class="submit-nav-btn" id="openSubmitForm">+ Submit Project</button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <p class="hero-label">GDG ON CAMPUS AITR</p>
+
+            <h1>
+                Discover & Share
+                <span>Student Projects</span>
+            </h1>
+
+            <p class="hero-description">
+                Showcase what you build, explore projects from other
+                developers, and share valuable feedback with the community.
+            </p>
+
+            <button class="hero-btn" id="exploreBtn">
+                Explore Projects
+            </button>
+
+        </section>
+
+
+                <!-- Project Discovery Section -->
+
+        <section class="projects-section" id="projects">
+
+            <div class="section-heading">
+                <p class="section-label">EXPLORE</p>
+
+                <h2>Discover Projects</h2>
+
+                <p>
+                    Explore projects built by students and developers
+                    from the community.
+                </p>
+            </div>
+
+
+            <!-- Search and Filter -->
+
+            <div class="project-controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search projects..."
+                >
+
+                <select id="categoryFilter">
+
+                    <option value="all">All Categories</option>
+
+                    <option value="web">Web</option>
+
+                    <option value="ai">AI</option>
+
+                    <option value="mobile">Mobile</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Project Cards -->
+
+            <div class="project-grid" id="projectGrid">
+
+                <article class="project-card">
+
+                    <div class="project-category">
+                        AI
+                    </div>
+
+                    <h3>AI Study Assistant</h3>
+
+                    <p>
+                        An AI-powered tool that helps students
+                        organize and understand their study material.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                    <div class="project-actions">
+
+                        <button class="upvote-btn">
+                            👍 <span>12</span>
+                        </button>
+
+                        <button class="comment-btn">
+                            💬 <span>4</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-category">
+                        Web
+                    </div>
+
+                    <h3>Campus Event Website</h3>
+
+                    <p>
+                        A responsive website for discovering
+                        college events and activities.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                    <div class="project-actions">
+
+                        <button class="upvote-btn">
+                            👍 <span>8</span>
+                        </button>
+
+                        <button class="comment-btn">
+                            💬 <span>2</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-category">
+                        Mobile
+                    </div>
+
+                    <h3>Student Task Manager</h3>
+
+                    <p>
+                        A mobile application for managing assignments,
+                        deadlines, and daily tasks.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                    <div class="project-actions">
+
+                        <button class="upvote-btn">
+                            👍 <span>15</span>
+                        </button>
+
+                        <button class="comment-btn">
+                            💬 <span>6</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    <div class="modal" id="submitModal">
+    <div class="modal-content">
+        <button class="close-modal" id="closeSubmitForm">&times;</button>
+
+        <h2>Submit Your Project</h2>
+        <p>Share your project with the GDG community.</p>
+
+        <form id="projectForm">
+            <input
+                type="text"
+                id="projectTitle"
+                placeholder="Project title"
+                required
+            >
+
+            <select id="projectCategory" required>
+                <option value="">Select category</option>
+                <option value="Web">Web</option>
+                <option value="AI">AI</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+
+            <textarea
+                id="projectDescription"
+                placeholder="Describe your project"
+                required
+            ></textarea>
+
+            <input
+                type="url"
+                id="projectLink"
+                placeholder="Project link"
+                required
+            >
+
+            <button type="submit" class="submit-form-btn">
+                Submit Project
+            </button>
+        </form>
+    </div>
+</div>  
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div>
+            <h3>GDG ProjectHub</h3>
+            <p>
+                A student project showcase and feedback platform
+                for the GDG on Campus AITR community.
+            </p>
+        </div>
+
+        <div>
+            <h4>Project</h4>
+            <a href="#projects">Explore Projects</a>
+            <a href="#" id="footerSubmit">Submit Project</a>
+        </div>
+
+        <div>
+            <h4>Built With</h4>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 GDG ProjectHub • GDG on Campus AITR</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
